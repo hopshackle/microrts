@@ -6,20 +6,11 @@
 
 package gui.frontend;
 
-import ai.BranchingFactorCalculatorBigInteger;
-import ai.core.AI;
-import ai.core.AIWithComputationBudget;
-import ai.core.ContinuingAI;
-import ai.core.PseudoContinuingAI;
-import ai.BranchingFactorCalculatorDouble;
-import ai.BranchingFactorCalculatorLong;
-import ai.PassiveAI;
-import ai.RandomAI;
-import ai.RandomBiasedAI;
-import ai.abstraction.HeavyRush;
-import ai.abstraction.LightRush;
-import ai.abstraction.RangedRush;
-import ai.abstraction.WorkerRush;
+import bots.*;
+
+import ai.*;
+import ai.core.*;
+import ai.abstraction.*;
 import ai.abstraction.cRush.CRush_V1;
 import ai.abstraction.cRush.CRush_V2;
 import ai.abstraction.partialobservability.POHeavyRush;
@@ -151,7 +142,8 @@ public class FEStatePane extends JPanel {
                    MLPSMCTS.class,
                    AHTNAI.class,
                    InformedNaiveMCTS.class,
-                   PuppetSearchMCTS.class
+                   PuppetSearchMCTS.class,
+                    bots.BasicBot.class
                   };
 
     
